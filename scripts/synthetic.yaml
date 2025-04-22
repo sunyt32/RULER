@@ -12,17 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-niah_single_1:
-  task: niah
-  args:
-    type_haystack: repeat
-    type_needle_k: words
-    type_needle_v: numbers
-    num_needle_k: 1
-    num_needle_v: 1
-    num_needle_q: 1
-
-niah_single_2:
+niah_single:
   task: niah
   args:
     type_haystack: essay
@@ -32,43 +22,13 @@ niah_single_2:
     num_needle_v: 1
     num_needle_q: 1
 
-niah_single_3:
-  task: niah
-  args:
-    type_haystack: essay
-    type_needle_k: words
-    type_needle_v: uuids
-    num_needle_k: 1
-    num_needle_v: 1
-    num_needle_q: 1
-
-niah_multikey_1:
+niah_multikey:
   task: niah
   args:
     type_haystack: essay
     type_needle_k: words
     type_needle_v: numbers
-    num_needle_k: 4
-    num_needle_v: 1
-    num_needle_q: 1
-
-niah_multikey_2:
-  task: niah
-  args:
-    type_haystack: needle
-    type_needle_k: words
-    type_needle_v: numbers
-    num_needle_k: 1
-    num_needle_v: 1
-    num_needle_q: 1
-
-niah_multikey_3:
-  task: niah
-  args:
-    type_haystack: needle
-    type_needle_k: uuids
-    type_needle_v: uuids
-    num_needle_k: 1
+    num_needle_k: 8
     num_needle_v: 1
     num_needle_q: 1
 
@@ -79,7 +39,7 @@ niah_multivalue:
     type_needle_k: words
     type_needle_v: numbers
     num_needle_k: 1
-    num_needle_v: 4
+    num_needle_v: 8
     num_needle_q: 1
 
 niah_multiquery:
@@ -90,7 +50,7 @@ niah_multiquery:
     type_needle_v: numbers
     num_needle_k: 1
     num_needle_v: 1
-    num_needle_q: 4
+    num_needle_q: 8
 
 vt:
   task: variable_tracking
@@ -110,12 +70,7 @@ fwe:
   args:
     alpha: 2.0
 
-qa_1:
+qa:
   task: qa
   args:
     dataset: squad
-
-qa_2:
-  task: qa
-  args:
-    dataset: hotpotqa
